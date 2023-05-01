@@ -30,7 +30,7 @@ app.get('/news/:id', (req, res) => {
 })
 
 // multiple news by category id
-app.get('/category/:id', (req, res) => {
+app.get('/categories/:id', (req, res) => {
     const id = req.params.id;
     if (id == 0) {
         res.send(news)
